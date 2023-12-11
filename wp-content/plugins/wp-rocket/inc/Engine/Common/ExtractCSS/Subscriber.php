@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;WP_Rocket\Engine\Optimization\RegexTrait&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wp-rocket\inc\Engine\Common\ExtractCSS\Subscriber.php</b> on line <b>9</b><br>

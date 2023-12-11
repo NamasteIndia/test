@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;GuzzleHttp\Psr7\StreamDecoratorTrait&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\themes\moddroid\libs\addons\vendor\nelexa\google-play-scraper\src\Util\LazyStream.php</b> on line <b>26</b><br>

@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;WP_Rocket\Engine\Plugin\UpdaterApiTools&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wp-rocket\inc\Engine\Plugin\UpdaterSubscriber.php</b> on line <b>12</b><br>

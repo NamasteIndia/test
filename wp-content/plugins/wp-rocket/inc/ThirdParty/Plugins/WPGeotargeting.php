@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;WP_Rocket\ThirdParty\ReturnTypesTrait&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wp-rocket\inc\ThirdParty\Plugins\WPGeotargeting.php</b> on line <b>7</b><br>

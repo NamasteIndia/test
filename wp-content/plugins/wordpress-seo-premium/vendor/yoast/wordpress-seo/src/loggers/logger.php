@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;YoastSEO_Vendor\Psr\Log\LoggerTrait&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wordpress-seo-premium\vendor\yoast\wordpress-seo\src\loggers\logger.php</b> on line <b>12</b><br>

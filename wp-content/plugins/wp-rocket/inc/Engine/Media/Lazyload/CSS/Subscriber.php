@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;WP_Rocket\Logger\LoggerAware&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wp-rocket\inc\Engine\Media\Lazyload\CSS\Subscriber.php</b> on line <b>23</b><br>

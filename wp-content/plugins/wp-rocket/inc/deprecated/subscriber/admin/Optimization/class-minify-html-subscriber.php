@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;WP_Rocket\deprecated\DeprecatedClassTrait&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wp-rocket\inc\deprecated\subscriber\admin\Optimization\class-minify-html-subscriber.php</b> on line <b>15</b><br>

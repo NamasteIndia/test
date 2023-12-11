@@ -1,0 +1,819 @@
+[WP STAGING Manual Logging][info][2023-12-03 14:26:06] WP STAGING Analytics Send Error: 
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 15:44:29] Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://play.google.com/store/apps/details?id=com.discord%22+title%3D%22Discord%3A+Talk%2C+Chat+&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Middleware.php(65): GuzzleHttp\Exception\RequestException::create()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(118): GuzzleHttp\Promise\TaskQueue->run()
+#5 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(145): GuzzleHttp\Handler\CurlMultiHandler->tick()
+#6 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Handler\CurlMultiHandler->execute()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#8 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#10 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#11 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/EachPromise.php(108): GuzzleHttp\Promise\Promise->wait()
+#12 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\EachPromise->GuzzleHttp\Promise\{closure}()
+#13 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#14 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#15 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/HttpClient/HttpClient.php(203): GuzzleHttp\Promise\Promise->wait()
+#16 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(220): Nelexa\GPlay\HttpClient\HttpClient->requestPool()
+#17 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#18 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#19 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/happymod.class.php(112): require_once('...')
+#20 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/happymod.php(41): starting_now->scrape_web_info()
+#21 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_happymod()
+#22 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#23 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#24 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#25 {main}
+
+Next Nelexa\GPlay\Exception\GooglePlayException: Client error: `GET https://play.google.com/store/apps/details?id=com.discord%22+title%3D%22Discord%3A+Talk%2C+Chat+&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php:222
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/happymod.class.php(112): require_once('...')
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/happymod.php(41): starting_now->scrape_web_info()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_happymod()
+#5 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#8 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php Line: 222 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 15:46:27] Uncaught TypeError: Nelexa\GPlay\Util\Caster::castToAppId(): Return value must be of type Nelexa\GPlay\Model\AppId, bool returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/Util/Caster.php:87
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(214): Nelexa\GPlay\Util\Caster::castToAppId()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/happymod.class.php(112): require_once('...')
+#4 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/happymod.php(41): starting_now->scrape_web_info()
+#5 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_happymod()
+#6 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#9 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/Util/Caster.php Line: 87 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 15:47:03] Uncaught TypeError: Nelexa\GPlay\Util\Caster::castToAppId(): Return value must be of type Nelexa\GPlay\Model\AppId, bool returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/Util/Caster.php:87
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(214): Nelexa\GPlay\Util\Caster::castToAppId()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/happymod.class.php(112): require_once('...')
+#4 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/happymod.php(41): starting_now->scrape_web_info()
+#5 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_happymod()
+#6 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#7 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#8 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#9 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/Util/Caster.php Line: 87 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:21:22] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/index.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:21:23] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/single.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:21:23] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/page.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:21:24] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/archive.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:21:24] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/tag.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:21:24] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/taxonomy-news_categories.php(15): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:21:25] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/taxonomy-developer.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:21:25] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/archive.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:21:26] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/search.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:47] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/index.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:47] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/single.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:47] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/page.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:48] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/archive.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:48] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/tag.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:49] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/taxonomy-news_categories.php(15): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:49] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/archive.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:49] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/taxonomy-developer.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:50] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/search.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:56] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/index.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:57] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/single.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:57] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/page.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:58] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/archive.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:58] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/tag.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:58] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/taxonomy-news_categories.php(15): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:59] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/taxonomy-developer.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:59] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/archive.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-04 16:23:59] Uncaught TypeError: AUTO_HTML_MINIFY::__toString(): Return value must be of type string, null returned in /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php:112
+Stack trace:
+#0 [internal function]: AUTO_HTML_MINIFY->__toString()
+#1 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(203): ob_end_flush()
+#2 /bitnami/wordpress/wp-content/plugins/amp/includes/validation/class-amp-validation-callback-wrapper.php(147): AMP_Validation_Callback_Wrapper->finalize()
+#3 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(326): AMP_Validation_Callback_Wrapper->__invoke()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#5 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#6 /opt/bitnami/wordpress/wp-includes/general-template.php(38): do_action()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/search.php(20): get_header()
+#8 /opt/bitnami/wordpress/wp-includes/template-loader.php(106): include('...')
+#9 /opt/bitnami/wordpress/wp-blog-header.php(19): require_once('...')
+#10 /opt/bitnami/wordpress/index.php(17): require('...')
+#11 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/elements/extra.php Line: 112 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_DEPRECATED][2023-12-04 18:11:08] strlen(): Passing null to parameter #1 ($string) of type string is deprecated - File: /bitnami/wordpress/wp-content/plugins/wp-staging/Backend/Modules/Jobs/SearchReplace.php Line: 401 | Is it Fatal Error? No | Is it Thrown by WP STAGING? Yes
+[WP STAGING Shutdown Function][E_DEPRECATED][2023-12-04 18:11:11] strlen(): Passing null to parameter #1 ($string) of type string is deprecated - File: /bitnami/wordpress/wp-content/plugins/wp-staging/Backend/Modules/Jobs/SearchReplace.php Line: 401 | Is it Fatal Error? No | Is it Thrown by WP STAGING? Yes
+[WP STAGING Shutdown Function][E_DEPRECATED][2023-12-04 18:11:15] strlen(): Passing null to parameter #1 ($string) of type string is deprecated - File: /bitnami/wordpress/wp-content/plugins/wp-staging/Backend/Modules/Jobs/SearchReplace.php Line: 401 | Is it Fatal Error? No | Is it Thrown by WP STAGING? Yes
+[WP STAGING Shutdown Function][E_DEPRECATED][2023-12-04 18:11:18] strlen(): Passing null to parameter #1 ($string) of type string is deprecated - File: /bitnami/wordpress/wp-content/plugins/wp-staging/Backend/Modules/Jobs/SearchReplace.php Line: 401 | Is it Fatal Error? No | Is it Thrown by WP STAGING? Yes
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 07:55:49] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:09:40] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:10:16] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:10:43] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:11:17] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:11:45] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:19:14] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:20:03] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:21:31] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:22:21] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:23:21] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:25:06] Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://play.google.com/store/apps/details?id=com.estrongs.android.pop&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Middleware.php(65): GuzzleHttp\Exception\RequestException::create()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(118): GuzzleHttp\Promise\TaskQueue->run()
+#5 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(145): GuzzleHttp\Handler\CurlMultiHandler->tick()
+#6 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Handler\CurlMultiHandler->execute()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#8 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#10 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#11 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/EachPromise.php(108): GuzzleHttp\Promise\Promise->wait()
+#12 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\EachPromise->GuzzleHttp\Promise\{closure}()
+#13 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#14 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#15 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/HttpClient/HttpClient.php(203): GuzzleHttp\Promise\Promise->wait()
+#16 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(220): Nelexa\GPlay\HttpClient\HttpClient->requestPool()
+#17 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#18 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#19 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.class.php(150): require_once('...')
+#20 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(25): starting_now->scrape_web_info()
+#21 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#22 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#23 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#24 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#25 {main}
+
+Next Nelexa\GPlay\Exception\GooglePlayException: Client error: `GET https://play.google.com/store/apps/details?id=com.estrongs.android.pop&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php:222
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.class.php(150): require_once('...')
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(25): starting_now->scrape_web_info()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#5 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#8 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php Line: 222 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:26:07] Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://play.google.com/store/apps/details?id=app.rvx.android.apps.youtube.music&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Middleware.php(65): GuzzleHttp\Exception\RequestException::create()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(118): GuzzleHttp\Promise\TaskQueue->run()
+#5 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(145): GuzzleHttp\Handler\CurlMultiHandler->tick()
+#6 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Handler\CurlMultiHandler->execute()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#8 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#10 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#11 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/EachPromise.php(108): GuzzleHttp\Promise\Promise->wait()
+#12 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\EachPromise->GuzzleHttp\Promise\{closure}()
+#13 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#14 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#15 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/HttpClient/HttpClient.php(203): GuzzleHttp\Promise\Promise->wait()
+#16 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(220): Nelexa\GPlay\HttpClient\HttpClient->requestPool()
+#17 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#18 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#19 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.class.php(150): require_once('...')
+#20 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(25): starting_now->scrape_web_info()
+#21 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#22 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#23 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#24 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#25 {main}
+
+Next Nelexa\GPlay\Exception\GooglePlayException: Client error: `GET https://play.google.com/store/apps/details?id=app.rvx.android.apps.youtube.music&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php:222
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.class.php(150): require_once('...')
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(25): starting_now->scrape_web_info()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#5 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#8 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php Line: 222 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:30:40] Uncaught Error: Call to a member function find() on bool in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php:325
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(335): latest_post()
+#1 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#2 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#3 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#4 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#5 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php Line: 325 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:31:45] Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://play.google.com/store/apps/details?id=com.estrongs.android.pop&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Middleware.php(65): GuzzleHttp\Exception\RequestException::create()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(118): GuzzleHttp\Promise\TaskQueue->run()
+#5 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(145): GuzzleHttp\Handler\CurlMultiHandler->tick()
+#6 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Handler\CurlMultiHandler->execute()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#8 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#10 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#11 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/EachPromise.php(108): GuzzleHttp\Promise\Promise->wait()
+#12 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\EachPromise->GuzzleHttp\Promise\{closure}()
+#13 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#14 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#15 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/HttpClient/HttpClient.php(203): GuzzleHttp\Promise\Promise->wait()
+#16 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(220): Nelexa\GPlay\HttpClient\HttpClient->requestPool()
+#17 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#18 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#19 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.class.php(150): require_once('...')
+#20 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(25): starting_now->scrape_web_info()
+#21 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#22 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#23 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#24 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#25 {main}
+
+Next Nelexa\GPlay\Exception\GooglePlayException: Client error: `GET https://play.google.com/store/apps/details?id=com.estrongs.android.pop&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php:222
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.class.php(150): require_once('...')
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(25): starting_now->scrape_web_info()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#5 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#8 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php Line: 222 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 08:32:43] Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://play.google.com/store/apps/details?id=com.alightcreative.motion%22%3E%0A%3Cspan+class%3D%22right%22%3Ecom.alightcreative.motion%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cul%3E%0A%3Cli+class%3D%22flex%22%3E%3Cspan+class%3D%22left%22%3Ecategory%3C%2Fspan%3E+%3C%2Fli%3E%0A%3Cli+class%3D%22flex%22%3E%0A%3Ca+href%3D%22https%3A%2F%2Fapkmod.cc%2Fapps%2Fvideo-players-editors%22%3E%0A%3Cspan+class%3D%22right%22%3EVideo+Players+&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Middleware.php(65): GuzzleHttp\Exception\RequestException::create()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(118): GuzzleHttp\Promise\TaskQueue->run()
+#5 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(145): GuzzleHttp\Handler\CurlMultiHandler->tick()
+#6 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Handler\CurlMultiHandler->execute()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#8 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#10 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#11 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/EachPromise.php(108): GuzzleHttp\Promise\Promise->wait()
+#12 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\EachPromise->GuzzleHttp\Promise\{closure}()
+#13 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#14 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#15 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/HttpClient/HttpClient.php(203): GuzzleHttp\Promise\Promise->wait()
+#16 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(220): Nelexa\GPlay\HttpClient\HttpClient->requestPool()
+#17 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#18 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#19 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.class.php(148): require_once('...')
+#20 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(25): starting_now->scrape_web_info()
+#21 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#22 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#23 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#24 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#25 {main}
+
+Next Nelexa\GPlay\Exception\GooglePlayException: Client error: `GET https://play.google.com/store/apps/details?id=com.alightcreative.motion%22%3E%0A%3Cspan+class%3D%22right%22%3Ecom.alightcreative.motion%3C%2Fspan%3E%0A%3C%2Fa%3E%0A%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cul%3E%0A%3Cli+class%3D%22flex%22%3E%3Cspan+class%3D%22left%22%3Ecategory%3C%2Fspan%3E+%3C%2Fli%3E%0A%3Cli+class%3D%22flex%22%3E%0A%3Ca+href%3D%22https%3A%2F%2Fapkmod.cc%2Fapps%2Fvideo-players-editors%22%3E%0A%3Cspan+class%3D%22right%22%3EVideo+Players+&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php:222
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.class.php(148): require_once('...')
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/apkmod.php(25): starting_now->scrape_web_info()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_apkmodcc()
+#5 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#8 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php Line: 222 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-12-05 09:35:38] Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://play.google.com/store/apps/details?id=Getmodsapk.com&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Middleware.php(65): GuzzleHttp\Exception\RequestException::create()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(118): GuzzleHttp\Promise\TaskQueue->run()
+#5 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php(145): GuzzleHttp\Handler\CurlMultiHandler->tick()
+#6 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Handler\CurlMultiHandler->execute()
+#7 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#8 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#10 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#11 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/EachPromise.php(108): GuzzleHttp\Promise\Promise->wait()
+#12 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\EachPromise->GuzzleHttp\Promise\{closure}()
+#13 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#14 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#15 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/HttpClient/HttpClient.php(203): GuzzleHttp\Promise\Promise->wait()
+#16 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(220): Nelexa\GPlay\HttpClient\HttpClient->requestPool()
+#17 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#18 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#19 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/getmodsapk.class.php(217): require_once('...')
+#20 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/getmodsapk.php(41): starting_now->scrape_web_info()
+#21 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_getmodsapk()
+#22 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#23 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#24 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#25 {main}
+
+Next Nelexa\GPlay\Exception\GooglePlayException: Client error: `GET https://play.google.com/store/apps/details?id=Getmodsapk.com&hl=en_US&gl=us` resulted in a `404 Not Found` response:
+<!DOCTYPE html><html><head><meta http-equiv="content-type" content="text/html;charset=utf-8"><meta name="viewport" conte (truncated...)
+ in /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php:222
+Stack trace:
+#0 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php(185): Nelexa\GPlay\GPlayApps->getAppsInfo()
+#1 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/play.store.local.php(239): Nelexa\GPlay\GPlayApps->getAppInfo()
+#2 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/getmodsapk.class.php(217): require_once('...')
+#3 /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/includes/getmodsapk.php(41): starting_now->scrape_web_info()
+#4 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(324): wp_getmodsapk()
+#5 /opt/bitnami/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /opt/bitnami/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /opt/bitnami/wordpress/wp-admin/admin.php(259): do_action()
+#8 {main}
+  thrown - File: /bitnami/wordpress/wp-content/themes/moddroid/libs/addons/vendor/nelexa/google-play-scraper/src/GPlayApps.php Line: 222 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_DEPRECATED][2023-12-05 16:21:42] strlen(): Passing null to parameter #1 ($string) of type string is deprecated - File: /bitnami/wordpress/wp-content/plugins/wp-staging/Backend/Modules/Jobs/SearchReplace.php Line: 401 | Is it Fatal Error? No | Is it Thrown by WP STAGING? Yes
+[WP STAGING Shutdown Function][E_DEPRECATED][2023-12-05 16:21:45] strlen(): Passing null to parameter #1 ($string) of type string is deprecated - File: /bitnami/wordpress/wp-content/plugins/wp-staging/Backend/Modules/Jobs/SearchReplace.php Line: 401 | Is it Fatal Error? No | Is it Thrown by WP STAGING? Yes
+[WP STAGING Shutdown Function][E_DEPRECATED][2023-12-05 16:21:49] strlen(): Passing null to parameter #1 ($string) of type string is deprecated - File: /bitnami/wordpress/wp-content/plugins/wp-staging/Backend/Modules/Jobs/SearchReplace.php Line: 401 | Is it Fatal Error? No | Is it Thrown by WP STAGING? Yes
+[WP STAGING Shutdown Function][E_DEPRECATED][2023-12-05 16:21:51] strlen(): Passing null to parameter #1 ($string) of type string is deprecated - File: /bitnami/wordpress/wp-content/plugins/wp-staging/Backend/Modules/Jobs/SearchReplace.php Line: 401 | Is it Fatal Error? No | Is it Thrown by WP STAGING? Yes
+[WP STAGING Manual Logging][info][2023-12-05 16:38:36] WP STAGING Analytics Send Error: 

@@ -1,0 +1,3 @@
+<div class="play_menu">
+<i class="fa fa-globe"></i>&nbsp;<a href="https://namasteindia.github.io/test/wp-content/themes/moddroid/libs/addons/libs/<br />_<b>Fatal error</b>:  Uncaught Error: Undefined constant &quot;webs&quot; in C:\xampp\htdocs\apkmodded\wp-content\themes\moddroid\libs\addons\libs\footer.php:3_Stack trace:_#0 {main}_  thrown in <b>C:\xampp\htdocs\apkmodded\wp-content\themes\moddroid\libs\addons\libs\footer.php</b> on line <b>3</b><br />"></a>
+</div>

@@ -1,0 +1,2 @@
+<br>
+<b>Parse error</b>:  syntax error, unexpected string content &quot;));&quot;, expecting &quot;)&quot; in <b>C:\xampp\htdocs\apkmodded\wp-content\themes\moddroid\libs\core\config.php</b> on line <b>23</b><br>

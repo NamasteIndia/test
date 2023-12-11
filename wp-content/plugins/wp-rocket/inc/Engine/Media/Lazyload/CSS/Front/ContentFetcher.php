@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;WP_Rocket\Engine\Optimization\CSSTrait&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wp-rocket\inc\Engine\Media\Lazyload\CSS\Front\ContentFetcher.php</b> on line <b>8</b><br>

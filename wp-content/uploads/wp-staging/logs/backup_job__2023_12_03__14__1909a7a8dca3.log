@@ -1,0 +1,48 @@
+[info]-[2023/12/03 14:07:39] #################### Start Backup Job ####################
+[info]-[2023/12/03 14:07:39] WP Staging Version: 3.1.3
+[info]-[2023/12/03 14:07:39] PHP Version: 8.2.12
+[info]-[2023/12/03 14:07:39] Server: Apache
+[info]-[2023/12/03 14:07:39] MySQL: 11.1.2
+[info]-[2023/12/03 14:07:39] WP Version: 6.4.1
+[info]-[2023/12/03 14:07:39] PHP Memory Limit: 536870912
+[info]-[2023/12/03 14:07:39] WP Memory Limit: 41943040
+[info]-[2023/12/03 14:07:39] PHP Max Execution Time: 30
+[info]-[2023/12/03 14:07:39] Is Multipart Backup: No 
+[info]-[2023/12/03 14:07:39] Backup requirements passed...
+[info]-[2023/12/03 14:07:39] Discovering Files: Skipped directory "wp-content/ai1wm-backups/". Excluded by rule
+[info]-[2023/12/03 14:07:39] Discovering Files: Skipped directory "wp-content/wp-staging-sites/". Excluded by rule
+[info]-[2023/12/03 14:07:42] Discovering Files: Skipped directory "wp-content/uploads/wp-staging/". Excluded by rule
+[info]-[2023/12/03 14:07:42] Discovering Files: Skipped file "wp-content/backups-dup-lite/20231203_addisonmods_f648fb77e450792f8337_20231203135812.log/." Extension "log" is excluded by rule.
+[info]-[2023/12/03 14:07:42] Discovering Files: Skipped file "wp-content/backups-dup-lite/20231203_addisonmods_f648fb77e450792f8337_20231203135812_archive.zip/" (123 MB). It exceeds the maximum allowed file size for files with the extension "zip" (10 MB).
+[info]-[2023/12/03 14:07:43] Finished discovering Files. (17666 files)
+[info]-[2023/12/03 14:07:44] Added 9/9 otherfiles files to backup (9 MB/s)
+[info]-[2023/12/03 14:07:54] Added 15226/15592 plugins files to backup (18 MB/s)
+[info]-[2023/12/03 14:07:55] Added 15592/15592 plugins files to backup (37 MB/s)
+[info]-[2023/12/03 14:07:56] Added 0/0 muplugins files to backup (0 B/s)
+[info]-[2023/12/03 14:07:58] Added 1626/1626 themes files to backup (22 MB/s)
+[info]-[2023/12/03 14:07:59] Added 439/439 uploads files to backup (40 MB/s)
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_actionscheduler_actions. Rows: 9/9
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_actionscheduler_claims. Rows: 0/0
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_actionscheduler_groups. Rows: 2/2
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_actionscheduler_logs. Rows: 21/21
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_commentmeta. Rows: 0/0
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_comments. Rows: 2/2
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_duplicator_packages. Rows: 1/1
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_links. Rows: 0/0
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_options. Rows: 295/295
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_postmeta. Rows: 2,086/2,086
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_posts. Rows: 90/90
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_rmp_analytics. Rows: 0/0
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_term_relationships. Rows: 190/190
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_term_taxonomy. Rows: 147/147
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_termmeta. Rows: 0/0
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_terms. Rows: 147/147
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_usermeta. Rows: 39/39
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_users. Rows: 2/2
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_wpforms_payment_meta. Rows: 0/0
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_wpforms_payments. Rows: 0/0
+[info]-[2023/12/03 14:08:00] Backup database: Table wp_wpforms_tasks_meta. Rows: 3/3
+[info]-[2023/12/03 14:08:01] Included 850 KB/850 KB of Database Backup.
+[info]-[2023/12/03 14:08:01] Successfully created backup file
+[info]-[2023/12/03 14:08:02] The backup was validated successfully.
+[info]-[2023/12/03 14:08:02] ################## FINISH ##################

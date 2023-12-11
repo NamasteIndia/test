@@ -1,0 +1,10 @@
+<div id="redux-sticky">
+	<div id="info_bar">
+		<a href="javascript:void(0);" class="expand_options<br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined function esc_attr() in C:\xampp\htdocs\apkmodded\wp-content\plugins\redux-framework\redux-core\templates\panel\header-stickybar.tpl.php:15
+Stack trace:
+#0 {main}
+  thrown in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\redux-framework\redux-core\templates\panel\header-stickybar.tpl.php</b> on line <b>15</b><br />
+"></a>
+</div>
+</div>

@@ -1,0 +1,11 @@
+[info]-[2023/12/03 14:13:31] #################### Start Restore Job ####################
+[info]-[2023/12/03 14:13:31] WP Staging Version: 3.1.3
+[info]-[2023/12/03 14:13:31] PHP Version: 8.2.12
+[info]-[2023/12/03 14:13:31] Server: Apache
+[info]-[2023/12/03 14:13:31] MySQL: 11.1.2
+[info]-[2023/12/03 14:13:31] WP Version: 6.4.1
+[info]-[2023/12/03 14:13:31] PHP Memory Limit: 536870912
+[info]-[2023/12/03 14:13:31] WP Memory Limit: 41943040
+[info]-[2023/12/03 14:13:31] PHP Max Execution Time: 30
+[info]-[2023/12/03 14:13:31] Cleaning Up Restore Files: Path "wp-content/uploads/wp-staging/tmp/restore/" successfully cleaned up.
+[critical]-[2023/12/03 14:13:33] Cannot restore this backup! Free Version doesn't support site migration and can only restore backups created on the same domain, host and server. <a href="https://wp-staging.com" target="_blank">Get WP Staging Pro</a> to restore this backup on this website.

@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;Yoast\WP\SEO\Introductions\Application\Current_Page_Trait&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wordpress-seo\src\introductions\application\ai-generate-titles-and-descriptions-introduction-upsell.php</b> on line <b>14</b><br>

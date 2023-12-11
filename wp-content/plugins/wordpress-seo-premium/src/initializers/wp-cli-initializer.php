@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;Yoast\WP\SEO\Conditionals\No_Conditionals&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wordpress-seo-premium\src\initializers\wp-cli-initializer.php</b> on line <b>12</b><br>

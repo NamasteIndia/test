@@ -1,0 +1,188 @@
+[2023-12-05 10:00:31] [cloudflare::page_cache_test] Start test to https://realaddison.xyz with headers Array
+(
+    [timeout] => 10
+    [sslverify] => 
+    [user-agent] => Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+    [headers] => Array
+        (
+            [Accept] => text/html
+        )
+
+)
+
+[2023-12-05 10:00:31] [cloudflare::page_cache_test] Response Headers: \WpOrg\Requests\Utility\CaseInsensitiveDictionary::__set_state(array(
+   'data' => 
+  array (
+    'date' => 'Tue, 05 Dec 2023 10:00:31 GMT',
+    'content-type' => 'text/html; charset=UTF-8',
+    'link' => '<https://realaddison.xyz/wp-json/>; rel="https://api.w.org/"',
+    'x-wp-cf-super-cache' => 'cache',
+    'x-wp-cf-super-cache-active' => '1',
+    'x-wp-cf-super-cache-cache-control' => 's-maxage=31536000, max-age=60',
+    'x-wp-cf-super-cache-cookies-bypass' => 'swfpc-feature-not-enabled',
+    'cache-control' => 'no-cache',
+    'wpo-cache-status' => 'saving to cache',
+    'vary' => 'Accept-Encoding',
+    'last-modified' => 'Tue, 05 Dec 2023 10:00:31 GMT',
+    'cf-cache-status' => 'DYNAMIC',
+    'report-to' => '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=FJi0WUBeoxuTQKPJxtRbbRaCTTiEyKvLxhc4DCAtqAEWHS1QizHtQHGi3HBIq11ZFmj4%2BDVw%2BADbiiCokcA%2BcraE%2FkDynoVspjXKHPeFnTs2%2F3px7xcCwQ1h9tit3besvPk12RYk%2Fs1zCZpyKg8%3D"}],"group":"cf-nel","max_age":604800}',
+    'nel' => '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}',
+    'server' => 'cloudflare',
+    'cf-ray' => '830b714d1c383e1a-SIN',
+    'content-encoding' => 'br',
+    'alt-svc' => 'h3=":443"; ma=86400',
+  ),
+))
+[2023-12-05 10:00:31] [cloudflare::page_cache_test] Start test to https://realaddison.xyz/wp-content/plugins/wp-cloudflare-page-cache/assets/testcache.html with headers Array
+(
+    [timeout] => 10
+    [sslverify] => 
+    [user-agent] => Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+    [headers] => Array
+        (
+            [Accept] => text/html
+        )
+
+)
+
+[2023-12-05 10:00:32] [cloudflare::page_cache_test] Response Headers: \WpOrg\Requests\Utility\CaseInsensitiveDictionary::__set_state(array(
+   'data' => 
+  array (
+    'date' => 'Tue, 05 Dec 2023 10:00:32 GMT',
+    'content-type' => 'text/html',
+    'last-modified' => 'Tue, 05 Dec 2023 09:56:40 GMT',
+    'vary' => 'Accept-Encoding',
+    'cf-cache-status' => 'DYNAMIC',
+    'report-to' => '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=2BVcLz5At6K0mKIm5wq59PGvGZnrlwkTYPAY3noGIFus%2FFUztpIq03UaJtvHb0zUZiDy%2FqCP0Ldg%2Bh9EgLYOhiDxuuqkg6aROlvWLlnm2LMNVX9v2SXIHP0Vn2lmD9E6L0C%2BBtbew388vTd64zA%3D"}],"group":"cf-nel","max_age":604800}',
+    'nel' => '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}',
+    'server' => 'cloudflare',
+    'cf-ray' => '830b714fffdd3e47-SIN',
+    'content-encoding' => 'br',
+    'alt-svc' => 'h3=":443"; ma=86400',
+  ),
+))
+[2023-12-05 10:01:23] [cloudflare::page_cache_test] Start test to https://realaddison.xyz with headers Array
+(
+    [timeout] => 10
+    [sslverify] => 
+    [user-agent] => Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+    [headers] => Array
+        (
+            [Accept] => text/html
+        )
+
+)
+
+[2023-12-05 10:01:23] [cloudflare::page_cache_test] Response Headers: \WpOrg\Requests\Utility\CaseInsensitiveDictionary::__set_state(array(
+   'data' => 
+  array (
+    'date' => 'Tue, 05 Dec 2023 10:01:23 GMT',
+    'content-type' => 'text/html; charset=UTF-8',
+    'cache-control' => 'no-cache',
+    'wpo-cache-status' => 'cached',
+    'last-modified' => 'Tue, 05 Dec 2023 10:00:31 GMT',
+    'cf-cache-status' => 'DYNAMIC',
+    'report-to' => '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=tyFCoFN43%2Fov4hUTISRTZULuk3Jd%2FGEWJklVHi5gpBg1t%2Fi27iWx2Mua1vtDssa54YzU%2FhZf8auJpV8BZQdBi0AaJNa2Jot8aME0uJDOwuqbj9mYzBWz%2F8Q8FWbPBU48und3ueadr7jbYWoh1HA%3D"}],"group":"cf-nel","max_age":604800}',
+    'nel' => '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}',
+    'server' => 'cloudflare',
+    'cf-ray' => '830b72918bc718ca-SIN',
+    'content-encoding' => 'br',
+    'alt-svc' => 'h3=":443"; ma=86400',
+  ),
+))
+[2023-12-05 10:01:23] [cloudflare::page_cache_test] Start test to https://realaddison.xyz/wp-content/plugins/wp-cloudflare-page-cache/assets/testcache.html with headers Array
+(
+    [timeout] => 10
+    [sslverify] => 
+    [user-agent] => Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0
+    [headers] => Array
+        (
+            [Accept] => text/html
+        )
+
+)
+
+[2023-12-05 10:01:23] [cloudflare::page_cache_test] Response Headers: \WpOrg\Requests\Utility\CaseInsensitiveDictionary::__set_state(array(
+   'data' => 
+  array (
+    'date' => 'Tue, 05 Dec 2023 10:01:23 GMT',
+    'content-type' => 'text/html',
+    'last-modified' => 'Tue, 05 Dec 2023 09:56:40 GMT',
+    'vary' => 'Accept-Encoding',
+    'cf-cache-status' => 'DYNAMIC',
+    'report-to' => '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=5w%2BZj0OQomKkfbQk7yoBclBZaCgrHyiMxJBqtqowlULG%2F01gxhw5WZXlxgj0hVYlTGJTbAuOeq1oFdF%2B0bTGg8nY%2F2FkX5fYHVEBW21oBkKGE5nXm0N1r%2BiGtelgMFBwnlAIANtdKikYkmoJ9vE%3D"}],"group":"cf-nel","max_age":604800}',
+    'nel' => '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}',
+    'server' => 'cloudflare',
+    'cf-ray' => '830b7291eb3649a2-SIN',
+    'content-encoding' => 'br',
+    'alt-svc' => 'h3=":443"; ma=86400',
+  ),
+))
+[2023-12-05 10:01:38] [cache_controller::ajax_purge_whole_cache] Purge whole Cloudflare cache
+[2023-12-05 10:01:38] [cache_controller::purge_all] Purged whole Cloudflare cache
+[2023-12-05 10:37:07] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 10:37:07] [cache_controller::wpo_hooks] Purge whole Cloudflare cache (fired action: wpo_cache_flush)
+[2023-12-05 10:37:08] [cache_controller::wpo_hooks] Purge whole Cloudflare cache (fired action: wpo_cache_flush)
+[2023-12-05 10:37:08] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 10:37:09] [cache_controller::purge_all] Purged whole Cloudflare cache
+[2023-12-05 10:37:09] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 10:37:54] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 10:37:54] [cache_controller::purge_cache_on_post_edit] Purge Cloudflare cache for only post id 218 and related contents - Fired action: clean_post_cache
+[2023-12-05 10:37:55] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 10:37:55] [cache_controller::purge_urls] Purged specific URLs from Cloudflare cache
+[2023-12-05 10:37:55] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 10:38:23] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 10:38:23] [cache_controller::purge_cache_on_post_edit] Purge Cloudflare cache for only post id 219 and related contents - Fired action: clean_post_cache
+[2023-12-05 10:38:24] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 10:38:24] [cache_controller::purge_urls] Purged specific URLs from Cloudflare cache
+[2023-12-05 10:38:24] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 10:38:30] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 10:38:30] [cache_controller::purge_cache_on_post_edit] Purge Cloudflare cache for only post id 220 and related contents - Fired action: clean_post_cache
+[2023-12-05 10:38:31] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 10:38:31] [cache_controller::purge_urls] Purged specific URLs from Cloudflare cache
+[2023-12-05 10:38:31] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 10:38:38] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 10:38:38] [cache_controller::purge_cache_on_post_edit] Purge Cloudflare cache for only post id 221 and related contents - Fired action: clean_post_cache
+[2023-12-05 10:38:39] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 10:38:39] [cache_controller::purge_urls] Purged specific URLs from Cloudflare cache
+[2023-12-05 10:38:39] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 10:38:42] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 10:38:42] [cache_controller::purge_cache_on_post_edit] Purge Cloudflare cache for only post id 222 and related contents - Fired action: clean_post_cache
+[2023-12-05 10:38:43] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 10:38:43] [cache_controller::purge_urls] Purged specific URLs from Cloudflare cache
+[2023-12-05 10:38:43] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 10:39:03] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 10:39:03] [cache_controller::purge_cache_on_post_edit] Purge Cloudflare cache for only post id 223 and related contents - Fired action: clean_post_cache
+[2023-12-05 10:39:04] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 10:39:04] [cache_controller::purge_urls] Purged specific URLs from Cloudflare cache
+[2023-12-05 10:39:04] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 10:39:21] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 10:39:21] [cache_controller::purge_cache_on_post_edit] Purge Cloudflare cache for only post id 224 and related contents - Fired action: clean_post_cache
+[2023-12-05 10:39:22] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 10:39:22] [cache_controller::purge_urls] Purged specific URLs from Cloudflare cache
+[2023-12-05 10:39:22] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 10:39:24] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 10:39:24] [cache_controller::purge_cache_on_post_edit] Purge Cloudflare cache for only post id 225 and related contents - Fired action: clean_post_cache
+[2023-12-05 10:39:25] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 10:39:25] [cache_controller::purge_urls] Purged specific URLs from Cloudflare cache
+[2023-12-05 10:39:25] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 10:39:41] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 10:39:41] [cache_controller::purge_cache_on_post_edit] Purge Cloudflare cache for only post id 226 and related contents - Fired action: clean_post_cache
+[2023-12-05 10:39:42] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 10:39:42] [cache_controller::purge_urls] Purged specific URLs from Cloudflare cache
+[2023-12-05 10:39:42] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 18:21:25] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 18:21:25] [cache_controller::wpo_hooks] Purge whole Cloudflare cache (fired action: wpo_cache_flush)
+[2023-12-05 18:21:26] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 18:21:29] [cache_controller::purge_all] Purged whole Cloudflare cache
+[2023-12-05 18:21:29] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 18:26:33] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 18:26:33] [cache_controller::wpo_hooks] Purge whole Cloudflare cache (fired action: wpo_cache_flush)
+[2023-12-05 18:26:35] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 18:26:36] [cache_controller::purge_all] Purged whole Cloudflare cache
+[2023-12-05 18:26:36] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2023-12-05 18:33:25] [cache_controller::purge_cache_queue_write] queue file not exist
+[2023-12-05 18:33:25] [cache_controller::wpo_hooks] Purge whole Cloudflare cache (fired action: wpo_cache_flush)
+[2023-12-05 18:33:25] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2023-12-05 18:33:26] [cache_controller::purge_all] Purged whole Cloudflare cache
+[2023-12-05 18:33:26] [cache_controller::purge_cache_queue_job] Cache purging complete

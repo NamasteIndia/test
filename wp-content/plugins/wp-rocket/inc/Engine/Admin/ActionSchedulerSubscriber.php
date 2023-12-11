@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;WP_Rocket\ThirdParty\ReturnTypesTrait&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wp-rocket\inc\Engine\Admin\ActionSchedulerSubscriber.php</b> on line <b>8</b><br>

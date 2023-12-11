@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;WP_Rocket\Traits\Config_Updater&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wp-rocket\inc\ThirdParty\Plugins\Ecommerce\WooCommerceSubscriber.php</b> on line <b>15</b><br>

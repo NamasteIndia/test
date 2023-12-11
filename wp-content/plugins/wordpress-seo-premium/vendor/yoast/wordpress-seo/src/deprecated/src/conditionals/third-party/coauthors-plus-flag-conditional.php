@@ -1,0 +1,5 @@
+<br>
+<b>Fatal error</b>:  Uncaught Error: Class &quot;Yoast\WP\SEO\Conditionals\Feature_Flag_Conditional&quot; not found in C:\xampp\htdocs\apkmodded\wp-content\plugins\wordpress-seo-premium\vendor\yoast\wordpress-seo\src\deprecated\src\conditionals\third-party\coauthors-plus-flag-conditional.php:13
+Stack trace:
+#0 {main}
+  thrown in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wordpress-seo-premium\vendor\yoast\wordpress-seo\src\deprecated\src\conditionals\third-party\coauthors-plus-flag-conditional.php</b> on line <b>13</b><br>

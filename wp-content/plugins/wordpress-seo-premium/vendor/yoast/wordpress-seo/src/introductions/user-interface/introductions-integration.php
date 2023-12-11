@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;Yoast\WP\SEO\Introductions\Application\Current_Page_Trait&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wordpress-seo-premium\vendor\yoast\wordpress-seo\src\introductions\user-interface\introductions-integration.php</b> on line <b>18</b><br>

@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;WP_Rocket\Dependencies\League\Container\ContainerAwareTrait&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wp-rocket\inc\Dependencies\League\Container\Inflector\InflectorAggregate.php</b> on line <b>8</b><br>

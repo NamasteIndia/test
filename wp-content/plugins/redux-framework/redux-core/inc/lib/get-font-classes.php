@@ -1,0 +1,4 @@
+<br>
+<b>Warning</b>:  file_get_contents(https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/metadata/icons.json): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\redux-framework\redux-core\inc\lib\get-font-classes.php</b> on line <b>44</b><br>
+<br>
+<b>Warning</b>:  foreach() argument must be of type array|object, null given in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\redux-framework\redux-core\inc\lib\get-font-classes.php</b> on line <b>48</b><br>

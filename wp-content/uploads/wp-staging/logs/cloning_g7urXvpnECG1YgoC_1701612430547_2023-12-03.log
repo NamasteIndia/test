@@ -1,0 +1,24 @@
+[INFO]-[2023/12/03 14:07:13] #################### Start Cloning Job ####################
+[info]-[2023/12/03 14:07:13] WP Staging Version: 3.1.3
+[info]-[2023/12/03 14:07:13] PHP Version: 8.2.12
+[info]-[2023/12/03 14:07:13] Server: Apache
+[info]-[2023/12/03 14:07:13] MySQL: 11.1.2
+[info]-[2023/12/03 14:07:13] WP Version: 6.4.1
+[info]-[2023/12/03 14:07:13] PHP Memory Limit: 536870912
+[info]-[2023/12/03 14:07:13] WP Memory Limit: 41943040
+[info]-[2023/12/03 14:07:13] PHP Max Execution Time: 30
+[INFO]-[2023/12/03 14:07:13] DB Copy: Creating table wpstg0_actionscheduler_actions
+[INFO]-[2023/12/03 14:07:13] DB Copy: Table wp_actionscheduler_actions contains 9 rows 
+[INFO]-[2023/12/03 14:07:13] DB Copy: Copy data from wp_actionscheduler_actions to wpstg0_actionscheduler_actions - 0 to 10000 records
+[INFO]-[2023/12/03 14:07:14] DB Copy: Creating table wpstg0_actionscheduler_claims
+[INFO]-[2023/12/03 14:07:14] DB Copy: Table wp_actionscheduler_claims contains 0 rows 
+[INFO]-[2023/12/03 14:07:14] DB Copy: Creating table wpstg0_actionscheduler_groups
+[INFO]-[2023/12/03 14:07:14] DB Copy: Table wp_actionscheduler_groups contains 2 rows 
+[INFO]-[2023/12/03 14:07:14] DB Copy: Copy data from wp_actionscheduler_groups to wpstg0_actionscheduler_groups - 0 to 10000 records
+[INFO]-[2023/12/03 14:07:15] DB Copy: Creating table wpstg0_actionscheduler_logs
+[INFO]-[2023/12/03 14:07:15] DB Copy: Table wp_actionscheduler_logs contains 21 rows 
+[INFO]-[2023/12/03 14:07:15] DB Copy: Copy data from wp_actionscheduler_logs to wpstg0_actionscheduler_logs - 0 to 10000 records
+[INFO]-[2023/12/03 14:07:15] DB Copy: Creating table wpstg0_commentmeta
+[INFO]-[2023/12/03 14:07:15] DB Copy: Table wp_commentmeta contains 0 rows 
+[INFO]-[2023/12/03 14:07:18] Verifying existing clones...
+[INFO]-[2023/12/03 14:07:18] Delete: Nothing to save.'

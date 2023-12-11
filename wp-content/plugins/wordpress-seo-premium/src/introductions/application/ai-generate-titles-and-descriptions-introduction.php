@@ -1,0 +1,2 @@
+<br>
+<b>Fatal error</b>:  Trait &quot;Yoast\WP\SEO\Introductions\Application\User_Allowed_Trait&quot; not found in <b>C:\xampp\htdocs\apkmodded\wp-content\plugins\wordpress-seo-premium\src\introductions\application\ai-generate-titles-and-descriptions-introduction.php</b> on line <b>15</b><br>

@@ -1,0 +1,42 @@
+
+---Downloaded files---
+The import files for: Modyolo Demo were successfully downloaded!
+Initial max execution time = 300
+Files info:
+Site URL = https://realaddison.xyz
+Data file = /opt/bitnami/wordpress/wp-content/uploads/2023/12/demo-content-import-file_2023-12-03__10-25-43.xml
+Widget file = /opt/bitnami/wordpress/wp-content/uploads/2023/12/demo-widgets-import-file_2023-12-03__10-25-43.json
+Customizer file = /opt/bitnami/wordpress/wp-content/uploads/2023/12/demo-customizer-import-file_2023-12-03__10-25-43.dat
+Redux files:
+opt_themes -> /opt/bitnami/wordpress/wp-content/uploads/2023/12/demo-redux-import-file_0-2023-12-03__10-25-43.json 
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Moddroid Slider Home : 
+
+(MDR) Home News or Blog - Latest Blog - Imported
+
+Moddroid Home Post : 
+
+(MDR) Home Category Post - Latest Games - Imported
+(MDR) Home Category Post - Latest Apps - Imported
+
+Moddroid Sidebar Home Top : 
+
+(MDR) Sidebar Category Selected  - Games - Imported
+(MDR) Sidebar Category Selected  - Apps - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: opt_themes finished successfully!
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+
